@@ -1,0 +1,51 @@
+.educate {
+    text-align: center;
+    background-color: #fef5e0;
+    padding: 20px 0;
+    &-circle{
+        background-color: $cMain;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        & p {
+            color: $cWhite;
+            font-size: 10px;
+            line-height: 60px;
+            letter-spacing: .2em;
+        }
+    }
+    &-middle {
+        margin: 30px;
+        @extend .font-md;
+        @extend .font-wei;
+        letter-spacing: .1em;
+        line-height: 1.4;
+    }
+    &-bottom {
+        @extend .font-md;
+        @extend .font-wei;
+        // @extend .flex;
+        letter-spacing: .1em;
+        line-height: 1.4;
+        border: 2px $cMain solid;
+        background-color: $cWhite;
+        margin: 0 20px 40px;
+        padding: 10px;
+        & div {
+            display: inline-block;
+            padding: 10px;
+            & img {
+                width: 30px;
+            }
+            & p {
+                padding: 10px;
+            }
+        }
+        
+    }
+}
+.text {
+    @extend .font-sm;
+    font-weight: 200;
+}

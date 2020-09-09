@@ -1,0 +1,43 @@
+.flow {
+    padding: 40px 15px;
+    text-align: center;
+    &-top {
+        margin-bottom: 40px;
+    }
+    &-list {  
+        background-color: #fef5e0; 
+        padding: 10px 15px;
+        margin-bottom: 5px;
+        list-style: none;
+        text-align: left;
+        &__question {
+            cursor: pointer;
+            @extend .flex;
+            justify-content: space-between;
+            & img {
+                width: 35px;
+                height: 35px;
+                margin-right: 20px;
+                vertical-align: middle;
+            }
+            
+        }  
+        &__answer {
+            padding: 20px 0;
+            & p{
+                line-height: 2.0em;
+            }
+            & p:nth-child(-n+2) {
+                @extend .font-sm;
+                @extend .font-wei;
+                margin-bottom: 10px;
+                letter-spacing: .15em;
+            }
+            & p:nth-child(3) {
+                font-size: 11px;
+            }
+        }  
+    }
+    
+}
+

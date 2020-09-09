@@ -1,0 +1,57 @@
+.special {
+    text-align: center;
+    padding-top: 10px;
+    background-color: #f7c23c;
+    &-top {
+        & span {
+           color: $cWhite; 
+        }
+    }
+    &-suport {
+        padding: 10px 10px 20px;
+        &__top {
+            position: relative;
+            top: 26px;
+            background-color: #f7c23c;
+            margin: 0 50px;
+            @extend .font-lr;
+            @extend .font-wei;
+            line-height: 1.3em;
+            letter-spacing: .1em;
+        }
+        &__clear {
+            clear: both;
+            padding: 20px 0;
+        }
+        &__border {
+            padding: 50px 40px;
+            border: 2px solid $cWhite;
+            justify-content: space-between;
+        }
+        &__circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: $cWhite;
+            margin-right: 20px;
+            font-size: 9px;
+            float: left;
+
+            & p{
+                line-height: 60px;
+                @extend .font-sm;
+                @extend .font-wei;
+                color: $cMain;
+            }
+          
+        }
+        &__text {
+            // margin-left: 40px;
+            text-align: left;
+            @extend .font-sm;
+            letter-spacing: .2em;
+            color: $cWhite;
+            margin-top: 7px;
+        }
+    }
+}

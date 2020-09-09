@@ -1,0 +1,43 @@
+.study {
+    padding: 10px;
+    text-align: center;
+    & h2 {
+        letter-spacing: .1em;
+        margin: 40px 0;
+    }
+    & p {
+        letter-spacing: .1em;
+        font-size: 14px;
+        color: $cSub;
+        line-height: 1.6em;
+    }
+    &-skill {
+        @extend .flex;
+        padding: 10px 30px ;
+        & div {
+            margin: 10px;
+            & img {
+                width: 100%;
+            } 
+        }
+    }
+    &-font {
+        @extend .font-wei;
+    }
+    &-message {
+        padding: 5px;
+        &__img {
+            margin: 15px 0;
+        }
+        &__text {
+            margin-bottom: 30px;
+            text-align: left;
+            & p {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+.text {
+    margin-bottom: 10px;
+}

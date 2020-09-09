@@ -1,0 +1,77 @@
+.comparison {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fef5e0;
+    &-top {
+        padding: 20px 0 0;
+        & p{
+            line-height: 1.5em;
+            @extend .font-wei;
+        }
+        & h2 {
+            padding: 10px 0 20px;
+        }
+    }
+    &-reason {
+        padding: 20px 20px 0;
+        &__img1 {
+            background-image: url(https://isara.life/wp-content/themes/isara_v2/img/learnfromfreelancer.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 120px;
+        }
+        &__img2 {
+            background-image: url(https://isara.life/wp-content/themes/isara_v2/img/learnfromprojects.jpg);
+        }
+        &__img3 {
+            @extend .comparison-reason__img1;
+            background-image: url(https://isara.life/wp-content/themes/isara_v2/img/actuallyfree.jpg);
+        }
+        &__para {
+            margin: 15px 15px 0;
+            & p {
+                &:nth-child(1) {
+                    color: $cMain;
+                    margin-bottom: 15px;
+                    @extend .font-wei;
+                }
+                &:nth-child(2) {
+                    color: $cSub;
+                    @extend .font-sm;
+                    padding: 0 15px;
+                    text-align: left;
+                    line-height: 1.8em;
+                    letter-spacing: .2em;
+                }
+            }
+        }
+    }
+    &-suport {
+        margin: 30px 20px 0;
+        & p:nth-child(1) {
+            color: $cMain;
+            @extend .font-lr;
+            margin: 10px 0 10px;
+        }
+        & p:nth-child(2) {
+            @extend .font-md;
+            font-weight: 300;
+        }
+        & p:nth-child(3) {
+            font-size: 10px;
+            letter-spacing: 0;
+            font-weight: 300;
+            margin: 10px 0;
+        }
+    }
+    &-bottom {
+        padding: 20px;
+        & p {
+            color: $cSub;
+            font-size: 12px;
+            letter-spacing: 0;
+            font-weight: 300;
+            line-height: 1.5em;
+        }
+    }
+}

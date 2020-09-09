@@ -1,0 +1,78 @@
+.freelance {
+    background-color: $cMain;
+    padding: 20px 0;
+    text-align: center;
+    &-circle {
+        background-color: $cWhite;
+        & p {
+            color: $cMain;
+            font-size: 12px;
+        }
+    }
+    &-top {
+        & h2 {
+            color: $cWhite;
+            padding: 20px;
+            font-size: 14px !important;
+            line-height: 2.5em;
+        }
+        & h2::before {
+            border-top:solid 4px $cWhite;
+            border-left:solid 4px $cWhite;
+        }
+        & h2::after {
+            border-right:solid 4px $cWhite;
+            border-bottom:solid 4px $cWhite;
+        }
+    }
+
+}
+.triangle {  
+    width: 0px; 
+    height: 0px; 
+    border-top: solid 35px #ebb94d; 
+    border-left: solid 35px transparent; 
+    border-bottom: solid 35px transparent; 
+    border-right: solid 35px transparent; 
+    margin: 0 auto; 
+    position: relative; 
+    bottom: 20px;  
+}
+
+.answer {
+    text-align: center;
+    margin-bottom: -20px;
+    & p {
+        position: relative;
+        top: -40px;
+        &:nth-child(1) {
+            @extend .font-lr;
+            @extend .font-wei;
+            letter-spacing: .1em;
+        }
+        &:nth-child(2) {
+            margin: 20px;
+            @extend .font-sm;
+        }
+        &:nth-child(3) {
+            margin: 20px;
+            @extend .font-sm;
+            color: $cSub;
+        }
+    }
+    &-message {
+        @extend .flex;
+        padding: 0 10px 20px;
+        & div {
+            border: 3px solid $cMain;
+            margin-right: 20px;
+        }
+        & p {
+            line-height: 2.0em;
+            @extend .font-sm;
+            & small {
+                text-decoration: underline;
+            }
+        }
+    }
+}

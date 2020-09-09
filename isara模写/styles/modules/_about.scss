@@ -1,0 +1,67 @@
+.about {
+    background-image: url(https://isara.life/wp-content/themes/isara_v2/img/aboutsecondbgsp.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: $cWhite;
+    padding: 30px;
+    &-top {
+        margin: 20px auto;
+        & h2 {
+            letter-spacing: .2em;
+            line-height: 1.2em;
+        }
+        & p {
+            padding-top: 15px;
+            @extend .font-sm;
+            @extend .font-wei;
+            line-height: 1.5em;
+            &  span {
+                color: $cMain;
+            }
+        }
+    }
+    &-bottom {
+        margin: 20px auto;
+    }
+   
+}
+.bg-white {
+    background-color: $cWhite;
+    padding: 5px 50px;
+    border-radius: 5px;
+    // position: relative;
+    &__para {
+        // position: absolute;
+        & p{
+            color: #000000;
+            @extend .font-sm;
+            @extend .font-wei;
+            margin: 10px;
+            line-height: 2.0em;
+        }
+    }
+}
+.bg-step {
+    background-color: $cMain;
+    color: $cWhite;
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 2px 0;
+}
+
+.skill-up {
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #016ea9;
+    & p {
+        @extend .font-sm;
+        color: $cWhite;
+        line-height: 1.5em;
+        letter-spacing: .1em;
+        & span {
+            color: $cMain;
+            @extend .font-wei;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+
+
+// body {
+//   font-family: 'Kameron', 'Noto Sans JP', sans-serif;
+// }
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+.font-sm {
+  font-size: 12px;
+}
+.font-md {
+  font-size: 15px;
+}
+.font-lr {
+  font-size: 18px;
+}
+.font-lg {
+  font-size: 20px;
+}
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+.pd-sm {
+  padding-bottom: 16px !important;
+}
+.pd-lg {
+  padding-bottom: 80px !important;
+}
+.font-wei {
+  font-weight: 600;
+}
+.content-width {
+  width: 100%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  @extend .content-width;
+  text-align: center;
+  height: 62px;
+  position: fixed;
+  background-color: $cWhite;
+  z-index: 10;
+
+}
+
+.header {
+  @extend .flex;
+  &-left {
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: left;
+
+    & img {
+      width: 90px;
+    }
+    & p {
+      @extend .font-sm;
+      @extend .font-wei
+    }
+  }
+  &-right {
+    background-color: #da6b64;
+    padding: 9px 11px;
+    & a {
+      @extend .font-sm;
+      color: $cWhite;
+    }
+    & img {
+      width: 20px;
+    }
+  }
+}
+.space {
+  height: 62px;
+  width: 100%;
+}
+
+.check {
+  background: blue;
+  height: 1000px;
+}
+.top {
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/mainsp.jpg);
+  height: 312px;
+  background-size: cover;
+  background-position: center;
+
+  &-container {
+    text-align: center;
+    padding: 30px;
+    & p {
+      padding-top: 10px;
+      @extend .font-lr;
+      @extend .font-wei
+    }
+    & img {
+      margin: 10px 0px 30px;
+    }
+    & h2 {
+      @extend .font-md;
+      font-weight: 300;
+    }
+  }
+}
+

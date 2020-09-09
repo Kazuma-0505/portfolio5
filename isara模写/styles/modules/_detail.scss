@@ -1,0 +1,38 @@
+.detail {
+    background-image: url(https://isara.life/wp-content/themes/isara_v2/img/specialdetailsp.jpg);
+    padding: 30px 5px;
+    &-top {
+        margin: 10px 0;
+        & h2 {
+            line-height: 1.5em;
+            margin-bottom: 20px;
+            letter-spacing: .1em;
+        } 
+        & p {
+            @extend .font-sm;
+            letter-spacing: .1em;
+            line-height: 1.5em;
+        }
+    }
+    &-middle {
+        margin: 30px 0 20px;
+        & h2 {
+            padding: 20px 0;
+            @extend .font-lr;
+        }
+        & h2::before {
+            border-top:solid 4px $cWhite;
+            border-left:solid 4px $cWhite;
+        }
+        & h2::after {
+            border-right:solid 4px $cWhite;
+            border-bottom:solid 4px $cWhite;
+        }
+    }
+    &-bottom {
+        @extend .font-sm;
+        letter-spacing: .1em;
+        line-height: 1.5em;
+        padding-bottom: 20px;
+    }
+}

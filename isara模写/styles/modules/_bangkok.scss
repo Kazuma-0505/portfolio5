@@ -1,0 +1,31 @@
+.bangkok {
+    background-image: url(https://isara.life/wp-content/themes/isara_v2/img/bangkokbgsp.jpg);
+    text-align: left;
+    & p{
+        line-height: 1.5em;
+        letter-spacing: .1em;
+        
+    }
+    &-top  {
+        padding: 20px 0 20px;   
+        & h2 {
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        & p {
+            font-size: 11px;
+            font-weight: 0;
+            margin-bottom: 10px;
+        }
+    }
+    &-list {
+        & p {
+            margin-bottom: 15px;
+            @extend .font-wei;
+            @extend .font-sm;
+        }
+    }
+   
+    
+}

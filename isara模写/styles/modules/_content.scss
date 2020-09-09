@@ -1,0 +1,25 @@
+.content {
+ background-image: url(https://isara.life/wp-content/themes/isara_v2/img/classbgsp.jpg);
+ padding: 25px 10px;
+    &-list {
+        border: 2px solid #016ea9;
+        background-color: $cWhite;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        & p {
+            background-color: #016ea9;
+            color: $cWhite;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        & li {
+            list-style: none;
+            color: #000000;
+            padding: 13px;
+            @extend .font-sm;
+            letter-spacing: .1em;
+            @extend .font-wei;
+            border-bottom: 1px dotted #e5e5e5;
+        }
+    } 
+}

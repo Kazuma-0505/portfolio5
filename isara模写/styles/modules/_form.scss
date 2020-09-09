@@ -1,0 +1,54 @@
+.form {
+    background-color: #ebb94d;
+    text-align: center;
+    color: $cWhite;
+
+    &__first {
+        @extend .font-md;
+        padding: 15px;
+
+        & p:nth-child(-n+2) {
+            padding: 3px;
+            letter-spacing: .2em;
+        }
+    }
+    &__btn {
+        @extend .font-lg;
+        background-color: #da6b64;
+        margin: 15px 30px 30px;
+        border-radius: 50px;
+        padding: 15px 0;
+        line-height: 1.4em;
+        & a {
+            color: $cWhite;
+        }
+    }
+    &__recruit {
+        font-size: 15px;
+        & p {
+            padding: 0 15px 30px;
+            line-height: 1.6em;
+
+        }
+    }
+    &__sns {
+        padding-bottom: 30px;
+        & a {
+            background-color: #00acee;
+            color: $cWhite;
+            font-size: 11px;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        
+    }
+
+}
+.font-red {
+    background-color: $cWhite;
+    font-size: 13px;
+    color: #c7254e;
+    margin-top: 13px;
+    @extend .font-wei;
+    border-radius: 5px;
+}

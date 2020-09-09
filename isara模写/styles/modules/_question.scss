@@ -1,0 +1,12 @@
+.question-list {
+    background-color: $cWhite;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);;
+    &__que {
+        display: block;
+        padding: 0;
+    }
+}
+.color {
+    color: #016ea9;
+}
